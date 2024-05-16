@@ -1,0 +1,24 @@
+.hp-bar-container {
+    width: 200px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    background-color: #ddd; /* Background color for container */
+    border-radius: 5px; /* Rounded corners for container */
+}
+
+.hp-bar {
+    width: 100%; /* Initial width representing full HP */
+    height: 100%;
+    background-color: red; /* Color for HP fill */
+    border-radius: 5px; /* Rounded corners for HP bar */
+    transition: width 0.5s ease-in-out; /* Smooth transition for HP decrease */
+    /* Added for black outline */
+    border: 1px solid black; /* Creates a 1px black border around the HP bar */
+    box-sizing: border-box; /* Ensures the border is included in the HP bar's width */
+}
+
+#hp-text {
+    color: white; /* Text color for HP value */
+    font-weight: bold; /* Bold text for emphasis */
+    text-align: center; /* Center align text within HP bar */
+    line-height: 20px; /* Vertical alignment within HP bar height */
+}
