@@ -1,11 +1,11 @@
 .hp-bar-container {
-    width: 200px; /* Adjust width as needed */
-    height: 20px; /* Adjust height as needed */
+    width: 400px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
     background-color: #ddd; /* Background color for container */
     border-radius: 5px; /* Rounded corners for container */
 }
 
-.hp-bar {
+#hp-bar {
     width: 100%; /* Initial width representing full HP */
     height: 100%;
     background-color: red; /* Color for HP fill */
@@ -20,5 +20,58 @@
     color: white; /* Text color for HP value */
     font-weight: bold; /* Bold text for emphasis */
     text-align: center; /* Center align text within HP bar */
-    line-height: 20px; /* Vertical alignment within HP bar height */
+    line-height: 50px; /* Vertical alignment within HP bar height */
+    font-size: 30px;
+}
+
+#com-hp-bar {
+    width: 100%; /* Initial width representing full HP */
+    height: 100%;
+    background-color: red; /* Color for HP fill */
+    border-radius: 5px; /* Rounded corners for HP bar */
+    transition: width 0.5s ease-in-out; /* Smooth transition for HP decrease */
+    /* Added for black outline */
+    border: 1px solid black; /* Creates a 1px black border around the HP bar */
+    box-sizing: border-box; /* Ensures the border is included in the HP bar's width */
+}
+
+#com-hp-text {
+    color: white; /* Text color for HP value */
+    font-weight: bold; /* Bold text for emphasis */
+    text-align: center; /* Center align text within HP bar */
+    line-height: 50px; /* Vertical alignment within HP bar height */
+    font-size: 30px;
+}
+
+#b{
+    width: 150px;
+    height: 20px;
+    background-color: black;
+    border-radius: 5px;
+    color: lightgreen;
+}
+
+#rButton{
+    width: 150px;
+    height: 20px;
+    background-color: beige;
+}
+
+#logs{
+    text-align: left;
+    font-weight: bold;
+    font-size: 21px;
+
+}
+#end{    text-align: left;
+    font-weight: bold;
+    font-size: 40px;}
+
+.directions{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

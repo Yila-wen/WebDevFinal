@@ -6,19 +6,52 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    
+<body style="background-color: lightblue;">
+    <div style="font-size: 20px;">Player HP</div>
     <div class="hp-bar-container">
-        <div class="hp-bar">
-            <span id="hp-text">100/100</span>
+        
+        <div id="hp-bar">
+            <span id="hp-text">30/30</span>
         </div>
     </div>
 
-    <button onclick="heal()"> HEAL </button>
-    <button onclick="dmg()"> DMG</button>
+
+    <div style="font-size: 20px;">Computer HP</div>
+    <div class="hp-bar-container">
+        
+        <div id="com-hp-bar">
+            <span id="com-hp-text">50/50</span>
+        </div>
+    </div>
+
+    <button id='b'onclick="action(1)"> DoS</button>
+    <button id='b'onclick="action(2)"> Network Monitoring </button>
+    <button id='b'onclick="action(3)"> Data Backup </button>
+    <button id='b'onclick="action(4)"> Kamikaze </button>
+
+    
+
+    <p id ='logs'></p>
+    <br>
+    <br>
+    <p id='end'></p>
+    <button onclick="restart()" id="rButton" style="display: none;" >RUN IT BACK</button>
 
 
-    <script src="script.js"></script>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="directions" >
+        <p>Goal: Infiltrate the enemy computer system.</p>
+        <p>When you click an action, a d20 die will be rolled for you and the enemy.</p>
+        <p>Each action has a minimum roll requirement and values above that threshold may give multipliers to your action.</p>
+        <p>DoS: Attack the opposing system. | MinRoll: 8 BaseEffect: 2 Multi: Every 4 |</p>
+        <p>Network Monitoring: Actively defend the system | MinRoll: 5 BaseEffect: 10% Multi: Every 3 |</p>
+        <p>Data Backup: Backup your system data | MinRoll: 14 BaseEffect: 25% Multi: Every 2 |</p>
+        <p>Kamikaze: We like to Gamble | Min: 20 |</p> 
+    </div>
+
+
+    <script src ='script.js'></script>
 </body>
 </html>
 
